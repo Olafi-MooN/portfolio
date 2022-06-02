@@ -1,0 +1,29 @@
+.container-benefits-block {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--secondary-bg);
+  transform: scale(1) !important;
+  border-radius: 50px;
+  padding-bottom: 20px ;
+}
+
+.content-benefits {
+  padding: 5% 0px 5% 2%;
+  margin: 0 auto 0 auto;
+  max-width: 1280px;
+}
+
+.content-benefits .benefits-aba {
+  font-size: max(20px, min(3vw, 26px));
+  opacity: .6;
+}
+
+.content-benefits .effect-phrase {
+  font-size: max(20px, min(7vw, 92px));
+  max-width: 850px;
+  font-size: 85px;
+  line-height: 1.1;
+  letter-spacing: -.045em;
+  font-weight: 700;
+  margin-top: 20px;
+}

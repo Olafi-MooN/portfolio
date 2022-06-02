@@ -1,0 +1,162 @@
+
+.grid-benefits { 
+  width: 83%;
+  height: 500px;
+  margin: 0 auto 10%;
+  max-width: 1280px;
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns:  1fr .5fr .5fr;
+  grid-template-rows:  1fr 1fr;
+  grid-template-areas:
+		"block1 block2 block3"
+		"block1 block4 block5";
+  
+  transition: all ease 2s;
+}
+
+.grid-benefits .block{ 
+  background: var(--bg);
+  border-radius: 24px;
+  padding: 10%;
+  transition: all ease 500ms;
+  position: relative;
+}
+
+.grid-benefits .block:hover {
+  transform: scale(1.04);
+}
+
+.skill {
+  transition: all ease 2s;
+  display: none;
+}
+
+.grid-benefits .block:hover .skill {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.d-skill-description { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.skill .skill-title  + div{
+  margin-top: 25px;
+}
+
+.d-skill-description .skill-description { 
+  font-size: 13px;
+}
+
+.skill .skill-title {
+  font-size: 15px;
+}
+
+.block.block-1 { 
+  grid-area: block1;
+}
+
+.block.block-1 {
+  grid-area: block1;
+}
+
+.title-text-block { 
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -.025em;
+}
+
+.p-text-block { 
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 0;
+  opacity: .75;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.block.block-2 { 
+  grid-area: block2;
+  color: #d03e3e;
+}
+
+.block.block-3 { 
+  grid-area: block3;
+  color: #3592bd;
+}
+
+.block.block-4 { 
+  grid-area: block4;
+  color: #1f591f;
+}
+
+.block.block-5 { 
+  grid-area: block5;
+  color: #b1b126;
+}
+
+.block-icons {
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-block-icons { 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+.progress{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border: 1px solid #e40000;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.progress .color{
+    position: absolute;
+    background-color: #e40000;
+    width: 20px;
+    height: 100%;
+    max-width: 70%;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    animation: progres 2s forwards;
+}
+
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

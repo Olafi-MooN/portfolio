@@ -1,0 +1,35 @@
+.container-text-motivation {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container-text-motivation .text-motivation {
+  max-width: 1280px;
+  font-size: max(40px, min(7vw, 100px) );
+  text-align: center; 
+  margin: 0 10%;
+  background-clip: text;
+  background: linear-gradient(91.36deg, #ECA658 0%, #F391A6 13.02%, #E188C3 25.52%, #A58DE3 37.5%, #56ABEC 49.48%, #737EB7 63.02%, #C8638C 72.92%, #DD5D57 84.38%, #DF6C51 97.92%);
+  animation: animatedborder 10s ease alternate infinite;
+  background-size: 400% 200%;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,.2);
+  font-weight: bold;
+  line-height: 1.05;
+}
+
+@keyframes animatedborder {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

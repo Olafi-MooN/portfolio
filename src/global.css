@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Poppins:wght@200;300;400;500;700;900&family=Rubik:wght@300;400;500;700&display=swap');
+@import 'atropos/css';
+
+:root {
+  --bg: #fff;
+  --secondary-bg: #f5f5f7;
+  --text: #1d1d1f;
+  --blue: #006ddb;
+  --form-bg: #fff;
+  --form-field: #f5f5f7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.border-radius {
+  border-radius: 100%;
+}

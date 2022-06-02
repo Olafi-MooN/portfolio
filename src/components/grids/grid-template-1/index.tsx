@@ -44,6 +44,8 @@ const GridTemplate1 = () => {
             className="atropos-banner"
             highlight={false}
             shadow={false}
+            rotateTouch={window.innerWidth > 1000}
+            rotate={window.innerWidth > 1000}
             onEnter={() => console.log("enter")}
           >
             <div>

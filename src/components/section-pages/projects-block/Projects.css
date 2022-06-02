@@ -3,11 +3,11 @@
   min-height: 100vh;
   transform: scale(1) !important;
   border-radius: 50px;
-  padding-bottom: 20px ;
+  padding-bottom: 20px;
 }
 
 
-.content-projects-grid { 
+.content-projects-grid {
   width: 90%;
   margin: 60px auto;
   min-height: 500px;
@@ -18,15 +18,21 @@
   gap: 28px;
 }
 
-.projects-block img{ 
+.projects-block img {
   border-radius: 20px;
+  width: 100%;
+  height: 337px;
   max-height: 337px;
   object-fit: cover;
 }
 
-@media (max-width: 600px)
-{
-  .content-projects-grid { 
+@media (max-width: 600px) {
+  .content-projects-grid {
     grid-template-columns: 300px;
   }
+
+  .projects-block img {
+    height: 200px;
+  }
+
 }

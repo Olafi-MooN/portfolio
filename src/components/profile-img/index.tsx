@@ -14,9 +14,9 @@ type ITypeProfile = {
 const ProfileImg: React.FC<ITypeProfile> = ({img}) => {
 
   useEffect(() => {
-    gsap.from(".profile-shadow", { repeat: -1, repeatDelay: 7,  width: 1000, height: 1000, position: "center", duration: 1, opacity: 0.8}).repeat();
-    gsap.from(".profile-img", { repeat: -1, repeatDelay: 7, scale: 1.2, position: "center", duration: 1}).repeat();
-    gsap.from(".profile-shadow-border", { repeat: -1, repeatDelay: 7, scale: 1.2, position: "center", duration: 1}).repeat();
+    gsap.from(".profile-shadow", { repeat: -1, repeatDelay: 20,  width: window.innerHeight > 800 ? 1000 : 350, height: window.innerHeight > 800 ? 1000 : 350, position: "center", duration: 1, opacity: 0.8}).repeat();
+    gsap.from(".profile-img", { repeat: -1, repeatDelay: 20, scale: 1, position: "center", duration: 1}).repeat();
+    gsap.from(".profile-shadow-border", { repeat: -1, repeatDelay: 7, scale: 1, position: "center", duration: 1}).repeat();
   }, [])
 
   return(

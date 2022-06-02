@@ -18,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
 function LandingPage() {
 
 
-  useEffect(() => scrollEffects(), [])
+  useEffect(() => window.innerWidth > 1000 ? scrollEffects() : () => { }, [])
   
   return (
     <div className="container-landing-page">

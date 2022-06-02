@@ -27,3 +27,19 @@
   font-weight: 700;
   margin-top: 20px;
 }
+
+@media (max-width: 600px)
+{
+  .content-benefits .effect-phrase {
+    font-size: max(20px, min(7vw, 92px));
+    max-width: 500px;
+    line-height: 1.1;
+    letter-spacing: -.045em;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .content-benefits {
+    padding: 10% 2% 5% 5%;
+  }
+}

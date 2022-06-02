@@ -72,9 +72,6 @@
   grid-area: block1;
 }
 
-.block.block-1 {
-  grid-area: block1;
-}
 
 .title-text-block { 
   font-size: 32px;
@@ -159,4 +156,15 @@
     100%{
         width: 100%;
     }
+}
+
+@media (max-width: 600px)
+{
+  .grid-benefits { 
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
 }

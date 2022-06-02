@@ -17,6 +17,10 @@
   scroll-behavior: smooth;
 }
 
+html { 
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;

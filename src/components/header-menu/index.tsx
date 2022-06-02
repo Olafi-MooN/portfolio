@@ -9,7 +9,7 @@ const HeaderMenu = () => {
     <nav className="container-header-menu">
       <ul className="content-header-menu">
         <li className="header-menu-li"><a href="#profile" className="logo-name">Alef S. All</a></li>
-        <li className="header-menu-li">
+        <li className="header-menu-li li-remove-visible">
           <ul className="content-header-menu">
             <li className="header-menu-li"><a href="#benefits" className="nav-main">Benefícios</a></li>
             <li className="header-menu-li"><a href="#projects" className="nav-main">Projetos</a></li>

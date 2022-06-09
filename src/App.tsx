@@ -1,12 +1,15 @@
 import React from 'react';
 import { Routes } from './routers';
-import 'atropos/css';
+import { ModalProvider } from './Context/ModalContext';
 
+import 'atropos/css';
 import "./global.css";
 
 function App() {
   return(
-    <Routes />
+    <ModalProvider>
+      <Routes />
+    </ModalProvider>
   )
 }
 

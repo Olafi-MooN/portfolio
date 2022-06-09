@@ -12,6 +12,7 @@ import { ProjectsBlock } from "../../components/section-pages/projects-block";
 // Styles
 import "./landing-page.css"; 
 import { TextMotivation } from "../../components/text-motivation";
+import { Modal } from "../../components/Modal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,15 +22,18 @@ function LandingPage() {
   useEffect(() => window.innerWidth > 1000 ? scrollEffects() : () => { }, [])
   
   return (
-    <div className="container-landing-page">
-      <HeaderMenu></HeaderMenu>
-      <div className="scroll-gsap-profile">
-        <ProfileBlock></ProfileBlock>
+    <>
+      <div className="container-landing-page">
+        <HeaderMenu></HeaderMenu>
+        <div className="scroll-gsap-profile">
+          <ProfileBlock></ProfileBlock>
+        </div>
+        <TextMotivation text={"Transforme a <br> sua ideia em <br/> um negócio digital."}></TextMotivation>
+        <BenefitsBlock></BenefitsBlock>
+        <ProjectsBlock></ProjectsBlock>
       </div>
-      <TextMotivation text={"Transforme a <br> sua ideia em <br/> um negócio digital."}></TextMotivation>
-      <BenefitsBlock></BenefitsBlock>
-      <ProjectsBlock></ProjectsBlock>
-    </div>
+      <Modal/>
+    </>
   )
 }
 

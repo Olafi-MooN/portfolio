@@ -14,7 +14,7 @@ const ProfileBlock = () => {
 				</div>
 				<h3 className="profile-name">Alef S. Soares</h3>
 				<h1 className="profile-role">Web Developer Expert</h1>
-				<a href="/../../src/public/curriculos/curriculo.pdf" download style={{ textDecoration: 'none' }}>
+				<a href="./../../src/public/curriculos/curriculo.pdf" download style={{ textDecoration: 'none' }}>
 					<h3 className="action-project-request">
 						Baixar Currículo <BsArrowRight style={{ margin: '0px 10px' }} />
 					</h3>

@@ -13,6 +13,9 @@ import { ProjectsBlock } from '../../components/section-pages/projects-block';
 import './landing-page.css';
 import { TextMotivation } from '../../components/text-motivation';
 import { Modal } from '../../components/Modal';
+import { ProcessBlock } from '../../components/section-pages/process-block';
+import { VscChevronRight } from 'react-icons/vsc';
+import { FooterMenu } from '../../components/footer-menu';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,7 +32,20 @@ function LandingPage() {
 				<TextMotivation text={'Transforme a <br> sua ideia em <br/> um negócio digital.'}></TextMotivation>
 				<BenefitsBlock />
 				<ProjectsBlock />
+				<ProcessBlock />
+				<div className="content-process-grid">
+					<div className="content-card">
+						<div className="title-call-action">Eai, Vamos trabalhar junto?</div>
+						<div className="description-call-action">
+							Entre em contato, agora mesmo,<br></br>pelo WhatsApp!
+						</div>
+						<div className="btn-contacts-call">
+							<a href="https://api.whatsapp.com/send?phone=5531975452891&text=Ol%C3%A1%20Alef%2C%20quero%20iniciar%20um%20projeto!">Entrar em contato</a>
+						</div>
+					</div>
+				</div>
 			</div>
+			<FooterMenu />
 			<Modal />
 		</>
 	);

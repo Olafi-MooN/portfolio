@@ -1,3 +1,45 @@
-.container-landing-page .pin-spacer{
+.container-landing-page .pin-spacer {
   width: 100% !important;
+}
+
+.content-card {
+  width: 100%;
+  background: rgb(88, 68, 137);
+  background: linear-gradient(23deg, rgba(88, 68, 137, 1) 0%, rgba(255, 5, 87, 1) 40%, rgba(255, 55, 77, 1) 80%, rgba(229, 130, 155, 1) 83%, rgba(14, 168, 229, 1) 86%, rgba(23, 174, 235, 1) 100%);
+  height: 600px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title-call-action {
+  font-size: 68px;
+  max-width: 650px;
+  text-align: center;
+  width: 100%;
+
+}
+
+.description-call-action {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn-contacts-call {
+  margin-top: 40px;
+}
+
+.btn-contacts-call a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  background-color: #5c5cbb;
+  border-radius: 4px;
+}
+
+.btn-contacts-call a:active {
+  transform: scale(.8);
 }

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "atropos": "^1.0.2",
+    "firebase": "^9.18.0",
     "gsap": "^3.9.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

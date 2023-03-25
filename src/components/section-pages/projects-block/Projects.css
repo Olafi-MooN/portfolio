@@ -12,15 +12,15 @@
   margin: 60px auto;
   min-height: 500px;
   justify-content: center;
-
-  display: grid;
-  grid-template-columns: 676px 676px;
-  gap: 28px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
 }
 
 .projects-block img {
   border-radius: 20px;
-  width: 100%;
+  width: 600px;
   height: 337px;
   max-height: 337px;
   object-fit: cover;

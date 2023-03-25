@@ -24,8 +24,8 @@
 .content-modal { 
   background-color: var(--secondary-bg);
   border-radius: 16px;
-  width: 60%;
-  height: 600px;
+  width: 95%;
+  height: 95vh;
 }
 
 .header-modal { 
@@ -34,7 +34,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 22px;
-  height: 15%;
+  height: 60px;
 }
 
 .header-modal h3{
@@ -46,5 +46,5 @@
 }
 
 .main-modal { 
-  height: 85%;
+  height: calc(100% - 60px);
 }

@@ -4,6 +4,7 @@ import { BsArrowRight } from 'react-icons/bs';
 
 //Styles
 import './profile-block.css';
+import curriculo from '../../../public/curriculos/curriculo.pdf';
 
 const ProfileBlock = () => {
 	return (
@@ -14,7 +15,7 @@ const ProfileBlock = () => {
 				</div>
 				<h3 className="profile-name">Alef S. Soares</h3>
 				<h1 className="profile-role">Web Developer Expert</h1>
-				<a href="/public/curriculos/curriculo.pdf" download style={{ textDecoration: 'none' }}>
+				<a href={curriculo} download style={{ textDecoration: 'none' }}>
 					<h3 className="action-project-request">
 						Baixar Currículo <BsArrowRight style={{ margin: '0px 10px' }} />
 					</h3>

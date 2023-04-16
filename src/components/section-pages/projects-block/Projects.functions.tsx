@@ -20,8 +20,8 @@ const ProjectsFunctions = (props: IProjectFunctions) => {
 	};
 
 	const openModalProjectByParams = (projectId: string | undefined, list: any[], openModal: IOpenModalModel) => {
-		if (projectId! && projectId.includes('#')) {
-			const project = list.find((x: any) => x?.id === projectId?.split('#')[1]);
+		if (projectId!) {
+			const project = list.find((x: any) => x?.id === projectId);
 			if (project?.id) {
 				getElementScroll();
 				setTimeout(() => {

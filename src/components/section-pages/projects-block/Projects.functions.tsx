@@ -10,7 +10,6 @@ const ProjectsFunctions = (props: IProjectFunctions) => {
 	const { openModal } = useModalContext();
 	const [list, setList] = useState<any[]>([]);
 	const { projectId } = useParams();
-	const navigate = useNavigate();
 
 	const getElementScroll = () => {
 		var target = document.getElementById(`${projectId}`);
@@ -21,8 +20,8 @@ const ProjectsFunctions = (props: IProjectFunctions) => {
 	};
 
 	const openModalProjectByParams = (projectId: string | undefined, list: any[], openModal: IOpenModalModel) => {
-		if (projectId!) {
-			const project = list.find((x: any) => x?.id === projectId);
+		if (projectId! && projectId.includes('#')) {
+			const project = list.find((x: any) => x?.id === projectId?.split('#')[1]);
 			if (project?.id) {
 				getElementScroll();
 				setTimeout(() => {
